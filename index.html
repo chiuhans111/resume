@@ -1,17 +1,441 @@
-<!doctype html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0DMRGN536"></script><script>window.dataLayer = window.dataLayer || []
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0DMRGN536"></script>
+  <script>window.dataLayer = window.dataLayer || []
     function gtag() { dataLayer.push(arguments) }
     gtag('js', new Date())
 
-    gtag('config', 'G-D0DMRGN536');</script><script>(function (c, l, a, r, i, t, y) {
+    gtag('config', 'G-D0DMRGN536');</script>
+  <script>(function (c, l, a, r, i, t, y) {
       c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) }
       t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i
       y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y)
-    })(window, document, "clarity", "script", "egqrnamsn2");</script><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"><link rel="manifest" href="./site.webmanifest"><title>portfolio2023</title><script defer="defer" src="js/chunk-vendors.bcb3d418.js"></script><script defer="defer" src="js/app.af532456.js"></script><link href="css/app.3d97c5be.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but portfolio2023 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script>!function (e, t, n, s, u, a) {
-      e.twq || (s = e.twq = function () {
-        s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments)
-      }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
-        a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
-    }(window, document, 'script')
-    // Insert Twitter Pixel ID and Standard Event data below
-    twq('init', 'o4xh0')
-    twq('track', 'PageView');</script></body></html>
+    })(window, document, "clarity", "script", "egqrnamsn2");</script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <title>Resume 2025</title>
+  <script defer="defer" src="js/chunk-vendors.bcb3d418.js"></script>
+  <script defer="defer" src="js/app.af532456.js"></script>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0mm;
+    }
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: auto;
+      padding: 0;
+      color: #333;
+      /* width: 210mm; */
+      /* height: 297mm; */
+      /* overflow: hidden; */
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 300mm;
+      margin: 0 auto;
+      /* padding: 10mm; */
+      box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      background: rgb(130, 130, 130);
+      background-image: url('./0072.jpg');
+      background-size: 190%;
+      background-position: left;
+      color: white;
+    }
+
+    .photo {
+      width: 125px;
+      height: 150px;
+      /* background-color: #f4f4f4; */
+      position: relative;
+      margin-right: 15px;
+    }
+
+    .photo::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: url('./Avatar2.jpg');
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      transform: scale(0.8);
+      top: 0;
+      left: 0;
+      z-index: 1;
+      border-radius: 5px;
+    }
+
+    .header-info {
+      flex-grow: 1;
+    }
+
+    .header-info h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .header-info p {
+      margin: 3px 0;
+    }
+
+    .columns {
+      display: flex;
+    }
+
+    .column {
+      padding: 14px;
+      box-sizing: border-box;
+    }
+
+    .column.large {
+      flex: 5.2;
+      border-right: solid 1px rgb(207, 207, 207);
+    }
+
+    .column.small {
+      flex: 2;
+    }
+
+
+    /* Add media query for responsive design */
+    @media (max-width: 600px) {
+      .columns {
+        flex-direction: column;
+        /* Stack columns vertically */
+      }
+
+      .column.large {
+        border-right: none;
+        /* Remove border when stacked */
+      }
+    }
+
+    .section {
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: normal;
+    }
+
+    .content {
+      /* padding-left: 10px; */
+    }
+
+    ul {
+      padding-left: 0;
+      margin-top: 0;
+      list-style-type: none;
+    }
+
+    li {
+      margin-top: 4px;
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+    }
+
+    .experience-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .experience-item h3 {
+      margin: 0;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    .experience-item p {
+      margin: 0;
+      font-style: italic;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 4px;
+      letter-spacing: 0.2px;
+      flex-shrink: 0;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .tag {
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      padding: 3px 8px;
+      font-size: 14px;
+    }
+
+    .pub {
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      padding: 3px 8px;
+      font-size: 14px;
+    }
+
+    hr {
+      opacity: 0.1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- existing code -->
+  <script>
+    // setTimeout(function () {
+    //     location.reload();
+    // }, 10000);
+  </script>
+  <!-- existing code -->
+
+
+  <div class="container">
+    <header class="header">
+      <div class="photo">
+      </div>
+      <div class="header-info">
+        <h1>邱柏翰 Po-Han (Hans) Chiu</h1>
+        <br>
+        <p>Optical R&D Engineer at Coretronic (Hsinchu)</p>
+      </div>
+    </header>
+    <div class="columns">
+      <div class="column large">
+        <div class="section">
+          <h2 class="section-title">About me</h2>
+          <div class="content">
+            <p>Optical engineer with passion in art and science. Specializing in developing innovative
+              micro- and nano-optical devices. I
+              leverage programming and art skills to translate abstract concepts into tangible solutions.
+            </p>
+            <p>
+              <strong>Research interests:</strong> Augmented Reality, Diffractive Optics, Computational
+              Electromagnetics, Numerical Optimization.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="section">
+          <h2 class="section-title">Experiences</h2>
+          <div class="content">
+            <div class="experience-item">
+              <h3>Optical R&D Engineer
+                <br>
+                <small>Coretronic Corporation; Hsinchu, Taiwan</small>
+              </h3>
+              <p>2024.04 - Present</p>
+            </div>
+            <p>In the CTO's office, I transformed innovative concepts into manufacturable products, focusing
+              on microstructure-based light manipulation techniques for next-generation displays. This
+              involved new product evaluation and patent assessment.
+            </p>
+            <div class="experience-item">
+              <h3>Optical Modelling Consultant
+                <br>
+                <small>Reality Optics; Cambridge, UK (Remote)</small>
+              </h3>
+              <p>2024.02 - 2024.03</p>
+            </div>
+            <p>We built electromagnetic simulation tool using MATLAB, implement the rigorous coupled wave
+              analysis algorithm for surface relief grating simulation.
+            </p>
+
+            <div class="experience-item">
+              <h3>Freelance WebGL Artist
+                <br>
+                <small>The Digital Panda; Vancouver, Canada (Remote)</small>
+              </h3>
+              <p>2023.08 - 2024.02</p>
+            </div>
+            <p>We create physically correct, real-time simulated refractive and reflective WebGL shaders for
+              web based applications.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="section">
+          <h2 class="section-title">Education</h2>
+          <h3>
+            <small>National Taipei University of Technology, <br> Department of Electro-Optical
+              Engineering</small>
+          </h3>
+          <div class="content">
+
+            <div class="experience-item">
+              <h3>Master's Degree
+              </h3>
+              <p>2021.09 - 2023.08</p>
+            </div>
+            <p>
+              My master's research focused on AR waveguide design principles, leading to breakthroughs and
+              two conference publications in SPIE proceedings. This work was recognized with the 2023 SPIE
+              Student Optical Design Award.
+            <div class="tags">
+              <div class="tag">Photonics</div>
+              <div class="tag">Fourier Optics</div>
+              <div class="tag">Optical Thin Film</div>
+              <div class="tag">Image Processing</div>
+              <div class="tag">Medical Imaging</div>
+              <div class="tag">Semiconductor Thin Film</div>
+            </div>
+            <div class="experience-item">
+              <h3>Bachelor's Degree
+              </h3>
+              <p>2017.09 - 2021.06</p>
+            </div>
+            <p>
+              During my Bachelor's studies, I developed a passion for optics and programming.
+              My final project was a machine learning-based fiber sensor interrogation system, which was
+              published in 2021 IEEE Photonics Journal.
+            </p>
+            <div class="tags">
+              <div class="tag">Optics</div>
+              <div class="tag">Solid-State Physics</div>
+              <div class="tag">Programming (C, C#, Python, MATLAB)</div>
+              <div class="tag">Computational Electromagnetic</div>
+              <div class="tag">Machine Learning</div>
+              <div class="tag">Optimization</div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="section">
+          <h2 class="section-title">Awards</h2>
+          <div class="content">
+            <ul>
+              <li>2023 SPIE. AR|VR|MR Student Optical Design Challenge - 1st Place</li>
+              <li>2021 Taiwan Photonics Society Optical Designers Competition - Gold</li>
+              <li>2016 Industrial Technical Competition - Software Design - 1st Place</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="column small">
+        <div class="section">
+          <h2 class="section-title">Contact</h2>
+          <div class="content">
+            <ul>
+              <li>Website: <a href="https://chiuhans111.github.io">chiuhans111.github.io</a></li>
+              <li>E-Mail: <a href="mailto:hanschiu3d@gmail.com">hanschiu3d@gmail.com</a></li>
+              <li>LinkedIn: <a href="https://linkedin.com/in/chiuhans">in/chiuhans</a></li>
+              <li>Twitter: <a href="https://twitter.com/chiu_hans">@chiu_hans</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="section">
+          <h2 class="section-title">Languages</h2>
+          <div class="content">
+            <ul>
+              <li>Chinese (Native)</li>
+              <li>English (TOEIC 900)</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="section">
+          <h2 class="section-title">Skills</h2>
+          <div class="content">
+            <ul>
+              <li>Optical System Design</li>
+              <div class="tags">
+                <div class="tag">Zemax</div>
+                <div class="tag">Code V</div>
+                <div class="tag">LightTools</div>
+                <div class="tag">RSoft</div>
+                <div class="tag">MetaOptic Designer</div>
+              </div>
+              <li>Computational electromagnetics</li>
+              <div class="tags">
+                <div class="tag">RCWA</div>
+                <div class="tag">FDTD</div>
+              </div>
+              <li>Programming</li>
+              <div class="tags">
+                <div class="tag">Python</div>
+                <div class="tag">MATLAB</div>
+                <div class="tag">C#</div>
+                <div class="tag">C</div>
+                <div class="tag">C++</div>
+                <div class="tag">WebGL</div>
+              </div>
+              <li>Multimedia Creation</li>
+              <div class="tags">
+                <div class="tag">Blender</div>
+                <div class="tag">Photoshop</div>
+                <div class="tag">Illustrator</div>
+                <div class="tag">After Effects</div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="section">
+          <h2 class="section-title">Publications</h2>
+          <div class="content">
+            <p><strong>"Design method and simulation of large field-of-view diffractive waveguide
+                displays."</strong> Proc. SPIE, 12449, 2023.</p>
+            <p><strong>"Compact design principle for diffractive exit-pupil expander in AR near-eye
+                system."</strong> Proc. SPIE, 11931, 2022.</p>
+            <p><strong>"Intensity and wavelength-division multiplexing fiber sensor interrogation using a
+                combination of autoencoder pre-trained convolution neural network and differential
+                evolution algorithm."</strong> IEEE Photonics J., 13(1), 2021, pp. 1-9.</p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <script>!function (e, t, n, s, u, a) {
+          e.twq || (s = e.twq = function () {
+            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments)
+          }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+            a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script')
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init', 'o4xh0')
+        twq('track', 'PageView');</script>
+</body>
+
+</html>
