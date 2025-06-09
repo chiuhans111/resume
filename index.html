@@ -52,6 +52,9 @@
       margin: 0 auto;
       /* padding: 10mm; */
       box-sizing: border-box;
+      break-inside: avoid;
+      display: flex;
+      flex-direction: column;
     }
 
     h1,
@@ -61,6 +64,10 @@
       padding-bottom: 5px;
       letter-spacing: 1px;
     }
+
+    /* p{
+      list-style-type: 1.2;
+    } */
 
     a {
       color: inherit;
@@ -91,7 +98,7 @@
       content: "";
       width: 100%;
       height: 100%;
-      background-image: url('./Avatar2 Medium.jpeg');
+      background-image: url('./avatar.jpg');
       background-size: cover;
       background-position: center;
       position: absolute;
@@ -120,7 +127,7 @@
     }
 
     .column {
-      padding: 14px;
+      padding: 7px 14px 0px;
       box-sizing: border-box;
     }
 
@@ -177,6 +184,8 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
+      margin-top: 3px;
+      margin-bottom: -3px;
     }
 
     .experience-item h3 {
@@ -239,9 +248,9 @@
       <div class="photo">
       </div>
       <div class="header-info">
-        <h1>邱柏翰 Po-Han (Hans) Chiu</h1>
+        <h1>Hans Chiu</h1>
         <br>
-        <p>Optical R&D Engineer at Coretronic (Hsinchu)</p>
+        <p>Software Engineer at Google</p>
       </div>
     </header>
     <div class="columns">
@@ -249,13 +258,11 @@
         <div class="section">
           <h2 class="section-title">About me</h2>
           <div class="content">
-            <p>Optical engineer with passion in art and science. Specializing in developing innovative
-              micro- and nano-optical devices. I
-              leverage programming and art skills to translate abstract concepts into tangible solutions.
+            <p>Software engineer with passion in art and science. Specializing in optical simulation. I
+              leverage my skills to translate abstract concepts into tangible solutions.
             </p>
             <p>
-              <strong>Research interests:</strong> Augmented Reality, Diffractive Optics, Computational
-              Electromagnetics, Numerical Optimization.
+              <strong>Interests:</strong> Computational Electromagnetics, Numerical Optimization.
             </p>
           </div>
         </div>
@@ -264,21 +271,29 @@
           <h2 class="section-title">Experiences</h2>
           <div class="content">
             <div class="experience-item">
-              <h3>Optical R&D Engineer
+              <h3>Software Engineer, Google
                 <br>
-                <small>Coretronic Corporation; Hsinchu, Taiwan</small>
+                <small>New Taipei City, Taiwan</small>
               </h3>
-              <p>2024.04 - Present</p>
+              <p>2024.06 - Present</p>
             </div>
-            <p>In the CTO office of the Display Business Group, I transformed innovative concepts into manufacturable
-              products, focusing
-              on microstructured optics for next-generation displays. This involved new product evaluation and patent
+            <p>Image and Video processing, Pixel Camera.
+            </p>
+            
+            <div class="experience-item">
+              <h3>Optical Engineer, Coretronic
+                <br>
+                <small>Hsinchu, Taiwan</small>
+              </h3>
+              <p>2024.04 - 2025.06</p>
+            </div>
+            <p>In the CTO office of the Display Business Group, I focus on microstructured optics for next-generation displays. This involved new product evaluation and patent
               assessment.
             </p>
             <div class="experience-item">
-              <h3>Optical Modelling Consultant
+              <h3>Optical Modelling Consultant, Reality Optics
                 <br>
-                <small>Reality Optics; Cambridge, UK (Remote)</small>
+                <small>Cambridge, UK (Remote)</small>
               </h3>
               <p>2024.02 - 2024.03</p>
             </div>
@@ -287,9 +302,9 @@
             </p>
 
             <div class="experience-item">
-              <h3>Freelance WebGL Artist
+              <h3>Freelance WebGL Artist, The Digital Panda
                 <br>
-                <small>The Digital Panda; Vancouver, Canada (Remote)</small>
+                <small>Vancouver, Canada (Remote)</small>
               </h3>
               <p>2023.08 - 2024.02</p>
             </div>
@@ -312,8 +327,7 @@
               <p>2021.09 - 2023.08</p>
             </div>
             <p>
-              My master's research focused on AR waveguide design principles, leading to breakthroughs and
-              two conference publications in SPIE proceedings. This work was recognized with the 2023 SPIE
+              My master's research focused on AR waveguide design principles, this work was recognized with the 2023 SPIE
               Student Optical Design Award.
             <div class="tags">
               <div class="tag">Photonics</div>
@@ -330,8 +344,6 @@
             </div>
             <p>
               During my Bachelor's studies, I developed a passion for optics and programming.
-              My final project was a machine learning-based fiber sensor interrogation system, which was
-              published in 2021 IEEE Photonics Journal.
             </p>
             <div class="tags">
               <div class="tag">Optics</div>
